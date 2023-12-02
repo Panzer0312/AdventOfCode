@@ -104,6 +104,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,10 +129,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AdventOfCode_Day_1.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="day1.h" />
+    <ClCompile Include="day1.cpp" />
+    <ClCompile Include="day2.cpp" />
+    <ClCompile Include="usefullStuff.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Day1Input.txt" />
+    <Text Include="day1Input.txt" />
+    <Text Include="day2Input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="day2.h" />
+    <ClInclude Include="usefullStuff.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

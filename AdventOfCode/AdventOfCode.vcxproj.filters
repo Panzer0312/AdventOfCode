@@ -13,15 +13,47 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{a8448f14-29b5-44ed-ac23-dc05e8062f56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Day1">
+      <UniqueIdentifier>{66aae4ac-404b-40c6-ad3b-01998d21636d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Day2">
+      <UniqueIdentifier>{e4d23b3c-cb45-4e2f-9033-d1aab27ab097}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AdventOfCode_Day_1.cpp">
-      <Filter>Quelldateien</Filter>
+    <ClCompile Include="day1.cpp">
+      <Filter>src\Day1</Filter>
+    </ClCompile>
+    <ClCompile Include="day1.h">
+      <Filter>src\Day1</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="usefullStuff.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="day2.cpp">
+      <Filter>src\Day2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Day1Input.txt">
-      <Filter>Ressourcendateien</Filter>
+    <ClInclude Include="usefullStuff.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="day2.h">
+      <Filter>src\Day2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="day1Input.txt">
+      <Filter>src\Day1</Filter>
+    </Text>
+    <Text Include="day2Input.txt">
+      <Filter>src\Day2</Filter>
     </Text>
   </ItemGroup>
 </Project>

@@ -1,15 +1,6 @@
-// AdventOfCode.cpp : Diese Datei enthält die Funktion "main". Hier beginnt und endet die Ausführung des Programms.
-//
+#include "day1.h";
 
-#include <iostream>
-#include <string>
-#include <fstream>
-#include <vector>
-#include<sstream>
-using namespace std;
-
-string replace_all(string s,std::string toReplace,std::string replaceWith
-) {
+string day1::replace_all(string s,std::string toReplace,std::string replaceWith) {
     string newString = s;
     int pos = 0;
     while (pos >= 0) {
@@ -24,7 +15,7 @@ string replace_all(string s,std::string toReplace,std::string replaceWith
     return newString;
 }
 
-string convertToNumbers(string s) {
+string day1::convertToNumbers(string s) {
     string output = s;
     string numbers [] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
     for (int i = 0; i < 9; i++) {
@@ -33,7 +24,7 @@ string convertToNumbers(string s) {
     return output;
 }
 
-int findFigures(string input) {
+int day1::findFigures(string input) {
     vector<int> integers;
     string s = convertToNumbers(input);
     for (char c : s) {
@@ -54,20 +45,16 @@ int findFigures(string input) {
     return twodigitNumbers;
 }
 
-int main()
+
+void day1::day1Execute()
 {
-    cout << "Hello World!\n";
-    string line;
-    ifstream input1("Day1Input.txt");
-    vector<string> file;
-    while (getline(input1, line))
-    {
-        file.push_back(line);
-    }
+    vector<string> file = usefullStuff::readInputEachLine("day1Input.txt");
     int sum = 0;
     for (string s : file) {
          int figures = findFigures(s);
          sum = sum + figures;
     }
-    cout << sum;
+    cout << "-----------------------------" << "\n \n";
+    cout << "Final Erg: "  << sum;
 }
+
