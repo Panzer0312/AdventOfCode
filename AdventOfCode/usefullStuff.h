@@ -8,6 +8,6 @@ using namespace std;
 class usefullStuff
 {
 public:
-	static vector<string> readInputEachLine(string file);
+	static std::vector<string> readInputEachLine(string file);
 
 };

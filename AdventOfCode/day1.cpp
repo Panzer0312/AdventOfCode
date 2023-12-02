@@ -25,7 +25,7 @@ string day1::convertToNumbers(string s) {
 }
 
 int day1::findFigures(string input) {
-    vector<int> integers;
+    std::vector<int> integers;
     string s = convertToNumbers(input);
     for (char c : s) {
         int x = (int)c - 48;
@@ -48,7 +48,7 @@ int day1::findFigures(string input) {
 
 void day1::day1Execute()
 {
-    vector<string> file = usefullStuff::readInputEachLine("day1Input.txt");
+    std::vector<string> file = usefullStuff::readInputEachLine("day1Input.txt");
     int sum = 0;
     for (string s : file) {
          int figures = findFigures(s);

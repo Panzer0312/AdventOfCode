@@ -9,5 +9,8 @@
 using namespace std;
 class day2 {
 public:
-	static void day2Execute();
+	static int day2Execute();
+	static std::vector<string> splitInput(string input, string delimiter);
+	static int findCubeCount(string input, string color);
+	static int splitGamePhase(string game, string delimiter);
 };
